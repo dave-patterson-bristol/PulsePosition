@@ -55,7 +55,7 @@
 // The minimum total frame size.  Some servo motors or other devices may not
 // work with pulses the repeat more often than 50 Hz.  To allow transmission
 // as fast as possible, set this to the same as TX_MINIMUM_SIGNAL.
-#define TX_MINIMUM_FRAME  20000.0
+#define TX_MINIMUM_FRAME  22500.0
 
 // The length of all transmitted pulses.  This must be longer than the worst
 // case interrupt latency, which depends on how long any other library may
@@ -63,7 +63,7 @@
 // Most libraries disable interrupts for no more than a few microseconds.
 // The OneWire library is a notable exception, so this may need to be lengthened
 // if a library that imposes unusual interrupt latency is in use.
-#define TX_PULSE_WIDTH      100.0
+#define TX_PULSE_WIDTH      300.0
 
 // When receiving, any time between rising edges longer than this will be
 // treated as the end-of-frame marker.
